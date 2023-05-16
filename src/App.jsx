@@ -2,6 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import GreetingsComponent from "./components/GreetingsComponent.jsx";
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,8 +31,10 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <p>Hello World!</p>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"target="_blank" >Project by Dumith Bou Habib</a>
+        <GreetingsComponent
+            nome="Cloysters"/>
+        <h2>Bom trabalho com o seu site até então!</h2>
     </>
   )
 }
